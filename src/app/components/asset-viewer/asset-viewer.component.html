@@ -1,5 +1,11 @@
-<div>
+<!-- <div>
     <h2>Poblacion</h2>
     <p>{{ poblacionFormateada }}</p>
 </div>
+ -->
 
+ <div>
+    <h2>Ciudad Seleccionada: {{ ciudadSeleccionada?.text || 'No hay ciudad seleccionada' }}</h2>
+    <p>Población: {{ ciudadSeleccionada?.poblacion || 'No hay datos de población' }}</p>
+    <p>Valor calculado: {{ calcularValor(ciudadSeleccionada?.poblacion) }}</p>
+  </div>

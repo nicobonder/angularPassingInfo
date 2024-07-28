@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AssetViewerComponent } from './components/asset-viewer/asset-viewer.component';
+import { SidebarService } from './services/sidebar.buttons.service';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,7 @@ import { AssetViewerComponent } from './components/asset-viewer/asset-viewer.com
 })
 export class AppComponent {
   title = 'passingInformation';
+
+  sidebarService = inject(SidebarService);
+  // dashboard = inject(DashboardComponent);
 }

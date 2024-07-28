@@ -11,11 +11,11 @@ import { CommonModule } from '@angular/common';
 })
 export class SidebarComponent   
  {
-  constructor(public sidebarService:    
- SidebarService) {}
-
- setIdSelectedCity(ciudadId: number) {
-  this.sidebarService.selectedCityId.set(ciudadId);
-  console.log("ciudad id " + ciudadId); 
-}
+  constructor(public sidebarService: SidebarService)   
+  {}
+ 
+   setIdSelectedCity(ciudadId: number) {
+     this.sidebarService.selectedCityId.set(ciudadId);
+     console.log("ciudad id " + ciudadId);
+   }
 }
